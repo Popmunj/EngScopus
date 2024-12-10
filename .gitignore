@@ -1,0 +1,5 @@
+.env
+data/
+graph/Nodes.json
+graph/Rels.json
+

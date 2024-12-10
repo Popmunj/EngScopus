@@ -1,0 +1,6 @@
+2024-12-05 22:52:28.796 | ERROR    | unpacker:unpack_literature:38 - Error unpacking Literature: sequence item 1: expected str instance, NoneType found
+2024-12-05 22:52:37.621 | ERROR    | unpacker:unpack_literature:38 - Error unpacking Literature: sequence item 1: expected str instance, NoneType found
+2024-12-05 22:55:37.006 | ERROR    | __main__:unpack_literature:28 - Error unpacking Literature: sequence item 1: expected str instance, NoneType found
+2024-12-05 22:56:38.507 | ERROR    | __main__:unpack_literature:30 - Error unpacking Literature: sequence item 1: expected str instance, NoneType found
+2024-12-05 23:00:24.139 | ERROR    | unpacker:unpack_literature:38 - Error unpacking Literature: sequence item 1: expected str instance, NoneType found
+2024-12-05 23:00:26.493 | ERROR    | unpacker:unpack_literature:38 - Error unpacking Literature: sequence item 1: expected str instance, NoneType found
