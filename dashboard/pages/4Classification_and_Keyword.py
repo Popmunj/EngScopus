@@ -139,7 +139,7 @@ with st.container(border=True):
         bargap=0.2,
         margin=dict(l=20, r=20, t=50, b=20),  
         showlegend=False,
-        title_text="Funding Score (Funder count divided Author count) Distribution"
+        title_text="Funding Score (Funder count divided by Author count) Distribution"
     )
     st.plotly_chart(fig, use_container_width=True)
 
