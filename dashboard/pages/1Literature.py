@@ -121,7 +121,7 @@ with st.container(border=True):
 with st.container(border=True):
     st.header("The Use of Reference")
     st.write("""
-    The number of references can be normalized by the number of funders and authors. 
+    The number of references can be normalized by the number of funders and authors
              """)
     ref = lits["ReferenceCount"] / (lits["AuthorCount"] + lits["FundingAgencyCount"])
     ref = ref.sort_values(ascending=False)

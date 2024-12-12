@@ -12,14 +12,14 @@ def load_model():
     nn.ReLU(),
     nn.Linear(128, 1)
 )
-    arch.load_state_dict(torch.load("model.pth", weights_only=True))
+    arch.load_state_dict(torch.load("nn_model/model.pth", weights_only=True))
     return arch.eval()
 
 def make_tensor(key, classification):
     from langchain_openai import OpenAIEmbeddings
     from dotenv import load_dotenv
     load_dotenv()
-    i = pd.read_csv("ts_index.csv").set_index("Unnamed: 0") # adjust
+    i = pd.read_csv("nn_model/ts_index.csv").set_index("Unnamed: 0") # adjust
    
     embedder = OpenAIEmbeddings()
     emb = embedder.embed_query(key)
@@ -50,7 +50,7 @@ lit_class = pd.DataFrame(lit_class.groupby("Classification").size()).sort_values
 
 views = pd.read_csv("../addition/pageviews.csv")
 class_date = pd.read_csv("csv/class_date.csv")
-i = pd.read_csv("ts_index.csv").set_index("Unnamed: 0")
+i = pd.read_csv("nn_model/ts_index.csv").set_index("Unnamed: 0")
 
 lit_auth_fund = pd.read_csv("csv/lit_ref_auth_fund.csv").drop(columns=["ReferenceCount"])
 fund_score = lit_auth_fund.assign(FundingScore = lambda x : (x["FundingAgencyCount"]/ x["AuthorCount"])).drop(
